@@ -9,15 +9,15 @@ function Banner() {
 
   useEffect(() => {
       axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`).then((response) => {
-        console.log(response.data.results[3])
-      setMovie(response.data.results[9])
+        //console.log(response.data.results[3])
+      setMovie(response.data.results[7])
       })
   },[]);
 
   return (
     <div className='banner' style={{backgroundImage: `url(${movie ? imageUrl+movie.backdrop_path : ""})`}}>
       <div className='content'>
-        <h1 className='title'>{movie ? movie.title : 'loading'}</h1>
+        <h1 className='title'>{movie ? movie.title : 'Loading...'}</h1>
         <div className='banner_buttons'>
           <button className='button'>Play</button>
           <button className='button'>My list</button>
