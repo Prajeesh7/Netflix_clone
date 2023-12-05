@@ -39,7 +39,7 @@
     height: 80px;
     max-width: 360px;
 }
-.fade{
+.fade_bottom{
     height: 10.6rem;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37, .61),#111);
 }
