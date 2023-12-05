@@ -6,11 +6,6 @@ import {API_KEY} from '../../Constants/constants'
 
 function banner() {
 
-  useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}&language=en-US`).than((response)=>{
-      console.log(response.data)
-    })
-  }, [])
   return (
     <div className='banner'>
       <div className='content'>
