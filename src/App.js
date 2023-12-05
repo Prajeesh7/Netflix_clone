@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 import NavBar from './components/NavBar/navBar';
 import Banner from './components/Banner/banner';
 import RowPost from './components/RowPosts/rowPost';
+import './App.css';
 
 function App() {
   return (
