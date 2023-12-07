@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './components/NavBar/navBar';
 import Banner from './components/Banner/banner';
 import RowPost from './components/RowPosts/rowPost';
+import {actionMovies,originals} from './Constants/urls';
 import './App.css';
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <div className="App">
     <NavBar/>
     <Banner/>
-    <RowPost title='Netflix Originals'  />
-    <RowPost title='Action'  />
+    <RowPost url={originals} title='Netflix Originals'  />
+    <RowPost url={actionMovies} title='Action' isSmall={true} />
     </div>
   );
 }
