@@ -13,7 +13,7 @@ function Banner() {
         //console.log(response.data.results[3])
         setMovie(response.data.results[Math.floor(Math.random() * response.data.results.length-1)]);
       }).catch((err) => {
-        alert('Please ensure your internet connection')
+        alert('Please ensure your internet connection');
       })
     }, []);
 
