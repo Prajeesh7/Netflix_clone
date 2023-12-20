@@ -7,7 +7,6 @@ import './banner.css';
 function Banner() {
   const [movie, setMovie] = useState()
 
-  const comp =
     useEffect(() => {
       axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`).then((response) => {
         //console.log(response.data.results[3])
@@ -15,7 +14,7 @@ function Banner() {
       }).catch((err) => {
         alert('Please ensure your internet connection');
       })
-    }, []);
+    });
 
   return (
     <div className='banner' style={{ backgroundImage: `url(${movie ? imageUrl + movie.backdrop_path : ""})` }}>
